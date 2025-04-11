@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f6f8;
+    /* background-image: url('https://imgs.search.brave.com/2n1UQi5rz-nHoVjkyOMW1O2JInXDUBnxpaXYlQ4Kl04/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzFhLzc5/LzgyLzFhNzk4Mjc0/NjhkN2U1ODlmOGMz/MjNkMTE1ZDIxNTc5/LmpwZw'); */
+    background-image: url('https://imgs.search.brave.com/6YefpQ62kSiLIEJODHhP-w6GyLBcHZ3AM43GDGSlMLA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzUzLzYyLzY0/LzM2MF9GXzk1MzYy/NjQ1OV9ybUpIOTFv/c2M1VkU0NGwxTlRz/bmFpS1NudERCRk00/Ti5qcGc');
+
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+  }
+
+  h1 {
+    text-align: center;
+    color: #0965a3;
+    border-radius: 20px;
+    background-color: antiquewhite;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .seat-map {
+    display: grid;
+    grid-template-columns: repeat(6, 60px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .seat {
+    width: 60px;
+    height: 60px;
+    background-color: #d4edda;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .seat.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .seat.booked {
+    background-color: #dc3545;
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .legend div {
+    margin: 0 10px;
+  }
+  
+  .box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .available {
+    background: #d4edda;
+  }
+  
+  .selected-box {
+    background: #007bff;
+  }
+  
+  .booked-box {
+    background: #dc3545;
+  }
+  
+  button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }

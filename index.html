@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Airline Seat Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>WELCOME TO AIR-DOON SERVICE</h1>
+  <h2>Select Your Seat</h2>
+
+  <div class="seat-map" id="seatMap">
+    <!-- Seats will be populated by JS -->
+  </div>
+
+  <div class="legend">
+    <div><span class="box available"></span> Available</div>
+    <div><span class="box selected-box"></span> Selected</div>
+    <div><span class="box booked-box"></span> Booked</div>
+  </div>
+
+  <button onclick="confirmBooking()">Confirm Booking</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
