@@ -1,9 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding:2px;
     background: #f4f6f8;
     /* background-image: url('https://imgs.search.brave.com/2n1UQi5rz-nHoVjkyOMW1O2JInXDUBnxpaXYlQ4Kl04/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzFhLzc5/LzgyLzFhNzk4Mjc0/NjhkN2U1ODlmOGMz/MjNkMTE1ZDIxNTc5/LmpwZw'); */
-    background-image: url('https://imgs.search.brave.com/6YefpQ62kSiLIEJODHhP-w6GyLBcHZ3AM43GDGSlMLA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA5LzUzLzYyLzY0/LzM2MF9GXzk1MzYy/NjQ1OV9ybUpIOTFv/c2M1VkU0NGwxTlRz/bmFpS1NudERCRk00/Ti5qcGc');
+    background-image: url('Assets/seating.jpg');
 
     background-position:center;
     background-size:cover;
@@ -14,13 +14,27 @@ body {
 
   h1 {
     text-align: center;
-    color: #0965a3;
-    border-radius: 20px;
-    background-color: antiquewhite;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration:4px #1f2133 underline;
+    text-shadow: 1px 2px 1px rgb(194, 145, 90);
+    padding-bottom: 30px;
   }
   
   h2 {
     text-align: center;
+    text-decoration: double;
+    color:#f5eded;
+    border: 2px solid rgb(28, 67, 104);
+    border-width: 8px;
+    background-color: #31975363;
+    border-style:groove;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 3px 3px #dc3545;
+    width: 40%;
+    padding: 2px;
+    border-radius: 40px;
+    margin:10px auto ;
   }
   
   .seat-map {
@@ -34,7 +48,7 @@ body {
   .seat {
     width: 60px;
     height: 60px;
-    background-color: #d4edda;
+    background-color: #74dd8c;
     border: 1px solid #ccc;
     text-align: center;
     line-height: 60px;
@@ -62,6 +76,8 @@ body {
   
   .legend div {
     margin: 0 10px;
+    color: rgb(0, 0, 0);
+    background-color: #ccc;
   }
   
   .box {
@@ -75,7 +91,7 @@ body {
   }
   
   .available {
-    background: #d4edda;
+    background: #65c97c;
   }
   
   .selected-box {
@@ -87,15 +103,26 @@ body {
   }
   
   button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     display: block;
     margin: 30px auto;
     padding: 10px 20px;
     font-size: 16px;
   }
+
+  button:hover{
+    background-color: #0056b3;
+  }
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 590px) {
     body {
-      font-size: 14px;
+      font-size: 12px;
       padding: 10px;
     }
   }
